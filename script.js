@@ -7,7 +7,7 @@ if(Lucky==0)
     Lucky++;
 }
 
-var Life = 10;
+var Life = 5;
 function Check(){
     const Guess = document.getElementById('InputField').value;
     Life--;
@@ -15,7 +15,7 @@ function Check(){
     document.getElementById('Lives').innerText= "❤️"+Life;
   
    
-   if(Guess>20||Guess<0)
+   if(Guess>10||Guess<0)
     {
         document.getElementById('Text').innerText="Please Enter A Number Between 0 - 10 ";
         document.getElementById('Text').style.backgroundColor="#55B5A1";
